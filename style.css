@@ -1,9 +1,14 @@
-/* დარესეტება*/
+
+/* ფონტის დამატება */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;  /* რისთვისაა საჭირიო? */
     list-style-type: none;
+    font-family: 'inter';
 }
  
 
@@ -14,9 +19,9 @@ body{
 }
 
 
+
 header {
-  background-color: aquamarine;
-  width: 100%;
+  background-color: #F5F5F7;
   text-align: center;
   padding: 20px;
     >a {
@@ -37,9 +42,128 @@ header {
                 a {
                     color: #000000;
                     text-decoration: none;
+                    font-weight: 500;
+                    font-size: 25px;
                 }
             }
        }
     }
+}
+
+.hero-content 
+{
+    
+    width: 1920px;
+    height: 400px ;
+    background-image: url(./assets/header-backg.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 20px;
+    padding-left: 45px;
+   
+   h1{
+       width: 975;
+       height: 58px;
+       margin: auto;
+       color: #FFFFFF;
+       font-weight: 700;
+       font-size: 48px;
+       padding: 131px 455px 37px;
+       
+      
+   }  
+   p{
+      
+      color: #FFFFFF;
+      font-weight: 500 ;
+      font-size: 20px;
+      margin-top: 37;
+      margin-bottom: 150px; 
+      padding: 37px;
+   }
+}
+    h2{
+        text-align: center;
+        width: 351px;
+        height: 44px;
+        margin: 45px auto;
+        font-weight: 700;
+        font-size: 36px;
+        color: #000000;
+        padding: 45 0 49px 0;
+    } 
+
+.card-story {
+    width: 360px;
+    height: 465px;
+    display: inline-block;
+    align-items: center;
+    padding: 20px;
+    margin: 29px 29px;
+}
+
+.card-body{
+    width: 360px;
+    height: 472px;
+    color: #000000;
+    
+
+}
+ .date{
+    width: 67px;
+    height: 16px;
+    font-weight: 400;
+    font-size: 13px;
+    
+ }
+ .author{
+    font-weight: 400;
+    font-size: 13px;
+   
+ }
+
+ .post-meta{
+    display: flex;
+
+ }
+
+.purple {
+        width: 360px;
+        height: 240px;
+        background-color:#C7B8FF ;
+
+       }
+.pink{
+        width: 360px;
+        height: 240px;
+        background-color: #FFB8D8;
+}
+
+.paleblue
+{
+    width: 360px;
+    height: 240px;
+    background-color: #B8E0FF;
+}
+
+
+.cream {
+    width: 360px;
+    height: 240px;
+    background-color: #FFE4B8;
+}
+
+.green{
+    width: 360px;
+    height: 240px;
+    background-color: #D4FFB8;   
+}
+
+.peach{
+    width: 360px;
+    height: 240px;
+    background-color: #FFD4B8;
+
 }
 
