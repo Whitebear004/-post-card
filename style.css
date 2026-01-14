@@ -1,0 +1,45 @@
+/* დარესეტება*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;  /* რისთვისაა საჭირიო? */
+    list-style-type: none;
+}
+ 
+
+body{
+    background-color: #F5F5F7;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+header {
+  background-color: aquamarine;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+    >a {
+     color: #5B47D1;
+     background-color: #F0EDFF;
+     padding: 10px 20px;
+     font-size: 24px;
+     font-weight: 700;
+     text-decoration: none;
+     margin-right: 50px;
+    }
+    nav{ 
+       display: inline-block;
+       ul {
+            li{
+                display: inline;
+                padding: 10px 20px;
+                a {
+                    color: #000000;
+                    text-decoration: none;
+                }
+            }
+       }
+    }
+}
+
