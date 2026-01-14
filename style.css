@@ -30,7 +30,7 @@ header {
      padding: 10px 20px;
      font-size: 24px;
      font-weight: 700;
-     text-decoration: none;
+     text-decoration: none; /*ლინკების ქვედა ზოლის მოხსა*/
      margin-right: 50px;
     }
     nav{ 
@@ -49,18 +49,24 @@ header {
        }
     }
 }
-
-.hero-content 
+    .grid-container {
+     align-items: center;
+     width: 100%;
+     
+     
+          
+    }
+    .hero-content 
 {
-    
+
     width: 1920px;
-    height: 400px ;
+    height: 400px;
     background-image: url(./assets/header-backg.jpg) ;
     background-size: cover;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    margin: 20px;
-    padding-left: 45px;
+    margin: 10px 0 0 0 ;
    
    h1{
        width: 975;
@@ -91,23 +97,27 @@ header {
         font-weight: 700;
         font-size: 36px;
         color: #000000;
-        padding: 45 0 49px 0;
+        padding: 40px 0px 40px 0px;
     } 
 
 .card-story {
-    width: 360px;
-    height: 465px;
-    display: inline-block;
-    align-items: center;
-    padding: 20px;
-    margin: 29px 29px;
+   display: flex;
+   width: 360px;
+   height: 465px;
+   display: inline-block;
+   align-items: center;
+   margin: 29px 29px;
+   vertical-align: top;
 }
 
 .card-body{
     width: 360px;
     height: 472px;
     color: #000000;
-    
+    >p {
+        font-weight: 400;
+        font-size:15px ;
+    }
 
 }
  .date{
@@ -126,6 +136,11 @@ header {
  .post-meta{
     display: flex;
 
+ }
+
+ h3{
+      font-weight: 600;
+      font-size: 22px;
  }
 
 .purple {
