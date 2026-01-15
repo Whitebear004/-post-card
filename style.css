@@ -59,7 +59,7 @@ header {
      width: 100%; 
      height: 100%;
      gap: 30px;
-     margin: 40px auto;
+     margin: 40px 0px 0px 0px;
     }
      .hero-content 
 { 
@@ -130,31 +130,39 @@ header {
 }
 
 .card-body{
+    
+    padding: 0px 6px 0px 6px;
     width: 360px;
-    height: 472px;
+    
     color: #000000;
-    >p {
+    >p{
+
+        margin:0px 20px 0px 0px;
         font-weight: 400;
         font-size:15px ;
     }
 
 }
 
-span{
+.post-meta span{
+    display: inline-block;
     display: inline-block;
     padding: 5px 0px 5px 0px;
-     .date{
-    padding: 0px 28px 0px 0px;
+     
+
+}
+
+.date{
+   
+   
     display: inline-block;
-    width: 100%;
     height: 16px;
     font-weight: 400;
     font-size: 13px;
  }
 
-}
- .author{
-    
+.author{
+    margin-left: auto;
     font-weight: 400;
     font-size: 13px;
  }
@@ -163,8 +171,11 @@ span{
  
 
  .post-meta{
+    justify-content: space-between;
     display: flex;
-
+    width: 100%;
+    padding: 10px 0;
+    align-items: center;
  }
 
  h3{
@@ -215,12 +226,15 @@ footer{
     display: block;
     width: 100%;
     background-color: #252424;  
+    margin: 40px auto;
     h3{
         font-weight: 600;
         font-size: 22px;
         color: #fcfbfb;
     }
     p{
+        width: 296px;
+        height: 68px;
         color: #A1A1A6;
         font-size: 14px;
         font-weight: 400;
@@ -229,23 +243,65 @@ footer{
 
 }
 
+.footer-content{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    gap: 82px;
+    padding: 64px 20px;
+    max-width: 1200px;
+    vertical-align: top;
+}
+
 footer li a {
     font-size: 14px;
     font-weight: 600;
-    color: #FFFFFF ;
+    color:#A1A1A6;
     text-decoration: none;
 }
 #news{
     
-
+    h3{
+        width: 91px;
+        height: 24px;
+    }
+    >p{
+        padding: 14px 0px 0px 0px;
+    }
     }
 #category{
     
-   color: #A1A1A6;
+    >h3{
+   width: 144px;
+   height: 24px;
+  }
+    >ul{
+        padding: 14px 0px 0px 0px;
+        width: 181px;
+        height: 101px;
+        color: #A1A1A6;
+         >li{
+            padding: 2px 0px 0px 0px;
+         }
+    }
+}
+
+#contact{
+    
+    >h3{
+        width: 107px;
+        height: 24px;
+    }
+    >ul{
+        padding: 14px 0px 0px 0px;
+        text-decoration: none;
+        color: #A1A1A6
+    }
+    
 }
 
 .copyright{
-    padding: 20px 0px 20px 0px;
+   
     text-align: center;
     background-color:#020202;
     font-size: 13px;
