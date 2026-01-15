@@ -11,45 +11,13 @@
     font-family: 'inter';
 
 }
-@media (max-width: 768px) {
-   .footer-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 40px;
-    }
-
-    #news p, #category ul, #contact ul {
-        width: 100%;
-        height: auto;
-    }
-    h1 {
-        font-size: 32px;
-        padding: 60px 10px 20px;
-    }
-
-    h2 {
-        font-size: 28px;
-        width: 100%;
-    }
-    header nav ul li {
-        display: block;
-        padding: 10px 0;
-    }
-    
-    header > a {
-        margin-right: 0;
-        display: block;
-        margin-bottom: 20px;
-    }
-}
 
  
 
 body{
     background-color: #F5F5F7;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 
@@ -143,8 +111,9 @@ header {
 .card-story {
 
    background-color: #FFFFFF;
-   width: 360px;
-   height: 472px;
+   width: 100%;
+   max-width: 360px;
+   height: auto;
    display: inline-block;
    align-items: center;
    margin-bottom: 20px;
@@ -217,39 +186,39 @@ header {
  }
 
 .purple {
-        width: 360px;
+        width: 100%;
         height: 240px;
         background-color:#C7B8FF ;
 
        }
 .pink{
-        width: 360px;
+        width: 100%;
         height: 240px;
         background-color: #FFB8D8;
 }
 
 .paleblue
 {
-    width: 360px;
+    width: 100%;
     height: 240px;
     background-color: #B8E0FF;
 }
 
 
 .cream {
-    width: 360px;
+    width: 100%;
     height: 240px;
     background-color: #FFE4B8;
 }
 
 .green{
-    width: 360px;
+    width: 100%;
     height: 240px;
     background-color: #D4FFB8;   
 }
 
 .peach{
-    width: 360px;
+    width: 100%;
     height: 240px;
     background-color: #FFD4B8;
 
@@ -334,10 +303,55 @@ footer li a {
 }
 
 .copyright{
-   
+   padding: 10px 0px 10px 0px;
     text-align: center;
     background-color:#020202;
     font-size: 13px;
     font-weight: 600;
     color:#86868B ;
+}
+
+@media (max-width: 768px) {
+   .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    #news p, #category ul, #contact ul {
+        width: 100%;
+        height: auto;
+    }
+    h1 {
+        font-size: 32px;
+        padding: 60px 10px 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+        width: 100%;
+    }
+    header nav ul li {
+        display: block;
+        padding: 10px 0;
+    }
+    
+    header > a {
+        margin-right: 0;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .card-story {
+        margin-left: 0;      
+        margin-right: 0;
+        max-width: 90%;      
+        display: block;      
+        margin: 20px auto;   
+    }
+
+    .grid-container {
+        height: auto;        
+        padding: 0 10px;
+    }
 }
